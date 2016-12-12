@@ -1,0 +1,106 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html, body{
+  height : 100%;
+}
+div,li,h1,h2,h3,h4,h5,p{
+  word-wrap: break-word;
+}
+div#main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#timeControl{
+  position: absolute;
+  width : 40%;
+  height: 40%;
+  left: 30%;
+  top : 30%;
+  z-index: 100;
+}
+.timeElement{
+  width: 15%;
+  color: yellow;
+  transition: width 1s, margin-left 1s,  border-radius 1s, font-size 1s;
+}
+#contentPane{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.contentElement{
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  color:white;
+  background-color: grey;
+  border: 15px solid transparent;
+  border-width: 0px 15px;
+  border-image: url('../wood.jpg') 30;
+  transition: background-color 1s, transform 1s;
+}
+.contentDetail{
+  width: 100%
+  height :auto;
+  line-height: 2em;
+  box-shadow: -5px 5px 5px black;
+  background-color: black;
+
+}
+.contentDetail:before{
+  content:'';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 0px solid;
+  border-right-width: 30px;
+  border-bottom-width: 30px;
+  border-color: rgba(255, 255,255, 0.8) grey;
+  transition: border .5s ease;
+
+}
+.contentDetail:hover:before{
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+}
+.cot_leave{
+  transform: rotateZ(-5deg);
+}
+.cot_over{
+  transform: rotateZ(0deg);
+}
+.tim_actived{
+  width: 20%;
+  font-size: 64px;
+  border-radius: 50%;
+}
+.tim_inactived{
+  width: 15%;
+  font-size: 48px;
+  border-radius: 20%;
+}
+
+h2.date{
+  position: absolute;
+  top: -40px;
+  color: white;
+  text-shadow: 5px 5px 10px;
+}
+
+img.content{
+  width : 50%;
+}
+.left{
+  left: -95px;
+  text-align: left;
+}
+.right{
+  left : 100%;
+  text-align: right;
+}

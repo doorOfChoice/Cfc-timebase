@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/timebase.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src='jquery-3.1.1.min.js'></script>
+    <script type="text/javascript" src='jTimebase.js'></script>
+    <script type="text/javascript">
+      $(function(){
+        $().jTimebase({
+          id_timeControl : '#timeControl',
+          id_contentPane : '#contentPane',
+          property_contentWidthRate : 0.4,
+          property_timeRadiusRate : 0.4
+        });
+      });
+    </script>
+    <title>CFC时间轴</title>
+  </head>
+  <body>
+      <div id="main">
+        <div id="timeControl">
+          <p class='timeElement'>C</p>
+          <p class='timeElement'>F</p>
+          <p class='timeElement'>C</p>
+        </div>
+
+        <div id="contentPane">
+            <div class="contentElement">
+              <div class='contentDetail'>
+                <h2 class='date'>2013.11.4</h2>
+                <img src="text.png" class='content' alt=""/>
+                <p>就在那一天，cfc成立了</p>
+                <p>迎接着，属于自由的光辉</p>
+              </div>
+            </div>
+
+            <div class="contentElement">
+              <div class='contentDetail'>
+                <h2 class='date'>2013.11.5</h2>
+                <img src="text.png" class='content' alt=""/>
+                <p>沃槽，成立第二天了</p>
+              </div>
+            </div>
+
+
+            <div class="contentElement">
+              <div class='contentDetail'>
+                <h2 class='date'>2013.11.6</h2>
+                <p>第三天，我渐渐的改变，也渐渐的成长.</p>
+                <p>winter is comming</p>
+              </div>
+            </div>
+
+
+            <div class="contentElement">
+              <div class='contentDetail'>
+                <h2 class='date'>2013.11.7</h2>
+                <p>我的个天啊</p>
+              </div>
+            </div>
+
+            <div class="contentElement">
+              <div class='contentDetail'>
+                <h2 class='date'>2013.11.8</h2>
+                <p>第三天，我渐渐的改变，也渐渐的成长.</p>
+                <p>winter is comming</p>
+              </div>
+            </div>
+
+            <div class="contentElement">
+              <div class='contentDetail'>
+                <h2 class='date'>2013.11.9</h2>
+                <p>第三天，我渐渐的改变，也渐渐的成长.</p>
+                <p>winter is comming</p>
+              </div>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
